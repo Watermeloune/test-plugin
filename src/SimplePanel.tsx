@@ -10,7 +10,7 @@ interface Props extends PanelProps<SimpleOptions> {}
 export const SimplePanel: React.FC<Props> = ({ options, data, width, height }) => {
   const theme = useTheme();
   const styles = getStyles();
-  const activites: HTMLElement[] = []
+  let activites: HTMLElement[] = []
   for (let i = 1; i < 15; i++) {
     activites.push(
       <div className="card">
